@@ -11,13 +11,15 @@ package mysql
 import (
 	"bytes"
 	"crypto/tls"
-	"database/sql/driver"
+	// "database/sql/driver"
 	"encoding/binary"
 	"errors"
 	"fmt"
 	"io"
 	"math"
 	"time"
+
+	"github.com/sanpingz/sql/driver"
 )
 
 // Packets documentation:

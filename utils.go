@@ -11,12 +11,14 @@ package mysql
 import (
 	"crypto/sha1"
 	"crypto/tls"
-	"database/sql/driver"
+	// "database/sql/driver"
 	"encoding/binary"
 	"fmt"
 	"io"
 	"strings"
 	"time"
+
+	"github.com/sanpingz/sql/driver"
 )
 
 var (

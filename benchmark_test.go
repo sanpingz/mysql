@@ -10,14 +10,17 @@ package mysql
 
 import (
 	"bytes"
-	"database/sql"
-	"database/sql/driver"
+	// "database/sql"
+	// "database/sql/driver"
 	"math"
 	"strings"
 	"sync"
 	"sync/atomic"
 	"testing"
 	"time"
+
+	"github.com/sanpingz/sql"
+	"github.com/sanpingz/sql/driver"
 )
 
 type TB testing.B

@@ -17,9 +17,11 @@
 package mysql
 
 import (
-	"database/sql"
-	"database/sql/driver"
+	// "database/sql"
+	// "database/sql/driver"
 	"net"
+
+	"github.com/sanpingz/sql/driver"
 )
 
 // MySQLDriver is exported to make the driver directly accessible.
@@ -162,6 +164,6 @@ func handleAuthResult(mc *mysqlConn, cipher []byte) error {
 	return err
 }
 
-func init() {
-	sql.Register("mysql", &MySQLDriver{})
-}
+// func init() {
+// 	sql.Register("mysql", &MySQLDriver{})
+// }

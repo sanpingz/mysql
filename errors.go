@@ -9,12 +9,14 @@
 package mysql
 
 import (
-	"database/sql/driver"
+	// "database/sql/driver"
 	"errors"
 	"fmt"
 	"io"
 	"log"
 	"os"
+
+	"github.com/sanpingz/sql/driver"
 )
 
 // Various errors the driver might return. Can change between driver versions.

@@ -9,8 +9,10 @@
 package mysql
 
 import (
-	"database/sql/driver"
+	// "database/sql/driver"
 	"io"
+
+	"github.com/sanpingz/sql/driver"
 )
 
 type mysqlField struct {

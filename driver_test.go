@@ -11,8 +11,8 @@ package mysql
 import (
 	"bytes"
 	"crypto/tls"
-	"database/sql"
-	"database/sql/driver"
+	// "database/sql"
+	// "database/sql/driver"
 	"fmt"
 	"io"
 	"io/ioutil"
@@ -25,6 +25,9 @@ import (
 	"sync/atomic"
 	"testing"
 	"time"
+
+	"github.com/sanpingz/sql"
+	"github.com/sanpingz/sql/driver"
 )
 
 var (

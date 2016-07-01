@@ -9,11 +9,13 @@
 package mysql
 
 import (
-	"database/sql/driver"
+	// "database/sql/driver"
 	"net"
 	"strconv"
 	"strings"
 	"time"
+
+	"github.com/sanpingz/sql/driver"
 )
 
 type mysqlConn struct {

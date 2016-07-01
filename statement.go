@@ -9,10 +9,12 @@
 package mysql
 
 import (
-	"database/sql/driver"
+	// "database/sql/driver"
 	"fmt"
 	"reflect"
 	"strconv"
+
+	"github.com/sanpingz/sql/driver"
 )
 
 type mysqlStmt struct {

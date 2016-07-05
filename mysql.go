@@ -130,6 +130,18 @@ func (mc *MySQLConn) WritePacket(data []byte) error {
 	return mc.writePacket(data)
 }
 
+func (mc *MySQLConn) HandleOkPacket(data []byte) error {
+	return mc.handleOkPacket(data)
+}
+
+func (mc *MySQLConn) HandleErrorPacket(data []byte) error {
+	return mc.handleErrorPacket(data)
+}
+
+func (mc *MySQLConn) DiscardResults() error {
+	return mc.discardResults()
+}
+
 func (mc *MySQLConn) ResetSequence() {
 	mc.sequence = 0
 }

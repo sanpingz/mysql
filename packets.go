@@ -108,6 +108,10 @@ func (mc *mysqlConn) writePacket(data []byte) error {
 			}
 		}
 
+		// fix a runtime error, need check netConn before use it
+		if mc.netConn == nil {
+			return driver.ErrBadConn
+		}
 		n, err := mc.netConn.Write(data[:4+size])
 		if err == nil && n == 4+size {
 			mc.sequence++

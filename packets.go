@@ -32,7 +32,7 @@ func (mc *mysqlConn) readPacket() ([]byte, error) {
 		// Read packet header
 		data, err := mc.buf.readNext(4)
 		if err != nil {
-			errLog.Print(err)
+			// errLog.Print(err)
 			mc.Close()
 			return nil, driver.ErrBadConn
 		}
